@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Superior room</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="new.css" />
+  <link rel="stylesheet" href="rooms.css" />
+
+</head>
+
+<body>
+<header class="header">
+  <nav>
+    <div class="nav-container">
+      <ul class="nav-left">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="our-rooms.html">Our Rooms <span class="arrow">∨</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="superior.html">Superior Room</a></li>
+            <li><a href="deluxe.html">Deluxe Room</a></li>
+            <li><a href="signature.html">Signature Room</a></li>
+            <li><a href="luxery.html">Luxury Suite</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <div class="logo">CLS HOTEL</div>
+
+      <ul class="nav-right">
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="wellness.html">Wellness</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="hamburger">&#9776;</div>
+  </nav>
+</header>
+
+<div class="mobile-menu">
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="our-rooms.html">Our Rooms <span class="arrow">∨</span></a>
+      <ul class="dropdown-menu">
+        <li><a href="superior.html">Superior Room</a></li>
+        <li><a href="deluxe.html">Deluxe Room</a></li>
+        <li><a href="signature.html">Signature Room</a></li>
+        <li><a href="luxery.html">Luxury Suite</a></li>
+      </ul>
+    </li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="restaurant.html">Restaurant</a></li>
+    <li><a href="wellness.html">Wellness</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<section class="room-detail">
+  <div class="room-header">
+    <div class="room-info">
+      <h1 class="slide-left-init">Superior Room<br>with Garden view</h1>
+    </div>
+    <div class="room-price">
+      <span class="from-text">from</span>
+      <span class="price">$199</span>
+    </div>
+  </div>
+
+  <hr class="horizontaldivider" />
+
+  <div class="room-features">
+    <div class="feature">
+      <p class="label">Size</p>
+      <p class="value">30 M2</p>
+    </div>
+    <div class="feature">
+      <p class="label">Bed</p>
+      <p class="value">1 twins Bed</p>
+    </div>
+    <div class="feature">
+      <p class="label">Capacity</p>
+      <p class="value">2 Adults 1 Child</p>
+    </div>
+    <div class="feature">
+      <p class="label">View</p>
+      <p class="value">Garden View</p>
+    </div>
+  </div>
+
+  <hr class="horizontaldivider" />
+
+  <div class="room-gallery">
+    <div class="gallery-image" style="background-image: url('images/superior\ room.jfif');">
+    <div class="hover-text">Perfect for family and long stays.</div>
+  </div>
+  <div class="gallery-image" style="background-image: url('images/rooms1.jfif');">
+    <div class="hover-text">Your homw away from home.</div>
+  </div>
+  <div class="gallery-image" style="background-image: url('images/rooms2.jfif');">
+    <div class="hover-text">Welcome to happiness.</div>
+  </div>
+  <div class="gallery-image" style="background-image: url('images/rooms3.jfif');">
+    <div class="hover-text">A great stay is closer than you think.</div>
+  </div>
+  <div class="gallery-image" style="background-image: url('images/rooms4.jfif');">
+    <div class="hover-text">Every stay will give you reason to smile.</div>
+  </div>
+  <div class="gallery-image" style="background-image: url('images/rooms5.jfif');">
+    <div class="hover-text">Stay with us in comfort.</div>
+  </div>
+</div>
+</section>
+
+<section class="calendar">
+  <div class="calendar-container">
+    <div class="calendar-wrapper">
+      <div class="calendar-header">
+        <button class="nav-btn" id="prevBtn">&lt; Prev</button>
+        <div class="today-text" id="todayBtn">Today</div>
+        <button class="nav-btn" id="nextBtn">Next &gt;</button>
+      </div>
+      <div class="months-container" id="monthsContainer"></div>
+    </div>
+
+    <div class="hero-form-bar">
+      <div class="form-field">
+        <label for="checkin">Check-in..*</label>
+        <input type="date" id="checkin" required>
+      </div>
+
+      <div class="form-field">
+        <label for="checkout">Check-out..*</label>
+        <input type="date" id="checkout">
+      </div>
+
+      <div class="form-field">
+        <label for="adults">Adults</label>
+        <select id="adults">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="children">Children</label>
+        <select id="children">
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+        </select>
+      </div>
+
+      <button type="submit">Search</button>
+    </div>
+  </div>
+</section>
+
+<section class="amenities our-amenities">
+  <h2 class="slide-left-init ">Make your stay memorable<br><span>Our Amenities</span></h2>
+  <a href="index.html" class="learn-more-btn">Learn More</a>
+  <div class="amenity-carousel">
+    <div class="amenity-card" style="background-image: url('images/spa.jfif');">
+      <div class="overlay">
+        <h3>Wellness & Spa</h3>
+        <p>On the present site of our hotel feet in the water, there used to be an establishment composed of a restaurant and dormitories.</p>
+      </div>
+    </div>
+    <div class="amenity-card" style="background-image: url('images/fitness\ centre.jfif');">
+      <div class="overlay">
+        <h3>Fitness Center</h3>
+        <p>On the present site of our hotel feet in the water, there used to be an establishment composed of a restaurant and dormitories.</p>
+      </div>
+    </div>
+    <div class="amenity-card" style="background-image: url('images/swimming\ pool.jfif');">
+      <div class="overlay">
+        <h3>Swimming Pool</h3>
+        <p>On the present site of our hotel feet in the water, there used to be an establishment composed of a restaurant and dormitories.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">  
+  <div class="contact-header">
+    <p>Make your stay memorable</p>
+    <h2 class="slide-left-init"><span>Have</span> any questions?</h2>
+  </div>
+
+  <div class="contact-content">
+    <div class="contact-info">
+  <div><strong>Talk</strong><br>41 (0)54 2344 00</div>
+  <div><strong>Meet</strong><br>Via Serlas 546,<br>6700 St. Moritz<br>Switzerland</div>
+  <div><strong>Connect</strong><br>@hoteller<br>info@hoteller.com</div>
+</div>
+
+    <div class="divider"></div>
+
+    <form class="contact-form">
+      <label for="name">Your name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Your email</label>
+      <input type="email" id="email" required>
+
+      <label for="message">Your message</label>
+      <textarea id="message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col logo-contact">
+      <h2 class="footer-logo">Cls<br>Hotel</h2><br>
+      <p>41 (0)54 2344 00</p>
+      <p>revs@hoteller.com</p><br>
+      <p>Via Serlas 546,<br>6700 St. Moritz<br>Switzerland</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Our Rooms</h4>
+      <ul>
+        <li>Superior Room</li>
+        <li>Deluxe Room</li>
+        <li>Signature Room</li>
+        <li>Luxury Suite</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Other Links</h4>
+      <ul>
+        <li>About Us</li>
+        <li>Experience</li>
+        <li>Wellness &amp; Spa</li>
+      </ul>
+
+      <div class="social">
+        <div class="social">
+  <a href="#" aria-label="Facebook"><span class="fab fa-facebook"></span></a>
+  <a href="#" aria-label="Twitter"><span class="fab fa-twitter"></span></a>
+  <a href="#" aria-label="Tripadvisor"><span class="fas fa-map-marker-alt"></span></a>
+  <a href="#" aria-label="Instagram"><span class="fab fa-instagram"></span></a>
+</div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© Copyright Hoteller Theme Demo – Theme by ThemeGoods</p>
+    <div>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+
+
+<a href="#" class="scroll-to-top" aria-label="Scroll to Top">^</a>
+
+
+<script src="script.js"></script>
+<script src="rooms.js"></script>
+</body>
+</html>
