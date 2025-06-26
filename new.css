@@ -987,7 +987,7 @@ html {
   .hamburger {
     display: block;
     font-size: 28px;
-    color: black;
+    color: white;
     cursor: pointer;
     position: absolute;
     top: 15px;
