@@ -133,9 +133,6 @@ a:hover {
   display: none;
 }
 
-
-
-
 .hero {
   position: relative;
   height: 100vh;
@@ -1489,21 +1486,35 @@ html {
 .restaurant-section {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 150px;
 }
 
 .restaurant-content {
+  width: 100%;
+  margin: 0;
+  padding: 2rem 3rem;
+  box-sizing: border-box;
+}
+
+.restaurant-text {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 1.5rem 3rem;
-  background-color: #001a17;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.restaurant-left {
+  flex: 1;
+  min-width: 250px;
 }
 
 .restaurant-left h2 {
   font-size: 4rem;
   line-height: 1.2;
   font-weight: 300;
+  color: white;
 }
 
 .restaurant-left h2 span {
@@ -1511,7 +1522,9 @@ html {
 }
 
 .restaurant-right {
+  flex: 1;
   max-width: 600px;
+  color: white;
 }
 
 .restaurant-right h3 {
@@ -1528,14 +1541,36 @@ html {
 .restaurant-image {
   display: flex;
   justify-content: center;
-  background-color: #001a17;
-  padding: 2rem 0;
+  padding-top: 2rem;
 }
 
 .restaurant-image img {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .restaurant-text {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .restaurant-left h2 {
+    font-size: 2.5rem;
+  }
+
+  .restaurant-right h3 {
+    font-size: 1.5rem;
+  }
+
+  .restaurant-right p {
+    font-size: 1rem;
+  }
+
+  .restaurant-image img {
+    width: 95%;
+  }
 }
 
 .restaurant-info-section {
@@ -1652,39 +1687,9 @@ html {
   right: 10px;
 }
 
+
 @media (max-width: 768px) {
-  .restaurant-content {
-    flex-direction: column;
-    padding: 1.5rem;
-    gap: 2rem;
-  }
 
-  .restaurant-left {
-    width: 100%;
-    text-align: center;
-  }
-
-  .restaurant-left h2 {
-    text-align: center;
-  }
-
-  .restaurant-right {
-    max-width: 100%;
-  }
-
-  .restaurant-right h3 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .restaurant-right p {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .restaurant-image img {
-    width: 95%;
-  }
 
   .quote {
     font-size: 1.4rem;
@@ -1722,6 +1727,7 @@ html {
     font-size: 1.2rem;
   }
 }
+
 
 /*-------------------------contact---------------*/
 
